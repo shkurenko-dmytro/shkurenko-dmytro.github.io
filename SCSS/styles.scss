@@ -382,6 +382,7 @@ header{
     padding: 111px 0 109px 0;
     align-items: center;
     justify-content: center;
+   
     .form{
       max-width: 535px;
       display: flex;
@@ -401,6 +402,21 @@ header{
       }
       .input{
         display: flex;
+        @media  (max-width:1250px) {
+          
+          flex-direction: column;  
+          input{
+            margin-bottom: 10px;
+          }
+          div{
+            display: flex;
+            a{
+            flex: 1 1 none;
+            width: 400px;
+            height: 69px;
+          }
+          }
+        }
         ::placeholder{
           font-family: Lato;
           font-size: 20px;

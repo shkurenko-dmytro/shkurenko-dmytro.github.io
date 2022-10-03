@@ -385,6 +385,22 @@ header .header__pages a {
 .content__centerForm .form .input {
   display: flex;
 }
+@media (max-width: 1250px) {
+  .content__centerForm .form .input {
+    flex-direction: column;
+  }
+  .content__centerForm .form .input input {
+    margin-bottom: 10px;
+  }
+  .content__centerForm .form .input div {
+    display: flex;
+  }
+  .content__centerForm .form .input div a {
+    flex: 1 1 none;
+    width: 400px;
+    height: 69px;
+  }
+}
 .content__centerForm .form .input ::-moz-placeholder {
   font-family: Lato;
   font-size: 20px;
