@@ -449,13 +449,38 @@ header{
   }
 }
  footer{
+  @media  (max-width:1250px) {
+          
+    justify-content: center;
+    justify-content: space-around;
+    
+    .content_footer{
+      flex: 1 1 auto;
+      justify-content: space-around;
+      .left{
+        margin-left: 10px;
+      }
+      .center{
+        flex-direction: column;
+        align-items: center;
+        a{
+          
+        }
+      }
+      .right{
+        flex-direction: column;
+        margin-right: 10px;
+      }
+    }
+    
+  }
   background-color: #f7f7f7;
   width: 100%;
   display: flex;
   justify-content: center;
   //align-items: center;
   .content_footer{
-    justify-content: center;
+    //justify-content: center;
     width: 57%;
     justify-content: space-between;
     padding: 3% 0 3% 0;
